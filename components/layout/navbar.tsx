@@ -4,10 +4,11 @@ import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Code2 } from "lucide-react"
+import { Menu, X, Code2, Terminal } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { Logo } from "@/components/ui/logo"
 
 const navItems = [
     { name: "Services", href: "/services" },
@@ -23,11 +24,14 @@ export function Navbar() {
         <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight">
-                    <div className="bg-primary/10 p-2 rounded-lg">
-                        <Code2 className="h-6 w-6 text-primary" />
+                <Link href="/" className="flex items-center gap-3 group">
+                    <div className="bg-primary/10 p-2 rounded-xl border border-primary/20 group-hover:border-primary/50 transition-colors relative">
+                        <Logo className="h-8 w-8 text-primary" />
                     </div>
-                    <span>AGENCY</span>
+                    <div className="flex flex-col leading-none">
+                        <span className="font-bold text-lg tracking-tight">IdsCraft</span>
+                        <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase">Agency</span>
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -51,8 +55,14 @@ export function Navbar() {
                 {/* Actions */}
                 <div className="hidden md:flex items-center gap-4">
                     <ThemeToggle />
-                    <Button asChild>
-                        <Link href="/book">Réserver un call</Link>
+                    <Button
+                        asChild
+                        className="relative overflow-hidden transition-all hover:shadow-[0_0_20px_rgba(14,165,233,0.5)] hover:ring-2 hover:ring-primary/50"
+                    >
+                        <Link href="/book">
+                            <span className="relative z-10">Réserver un call</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] animate-[shimmer_2s_infinite]" />
+                        </Link>
                     </Button>
                 </div>
 
