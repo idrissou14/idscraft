@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 IdsCraft Agency Website
 
-## Getting Started
+![IdsCraft Cover](public/images/hero.png)
 
-First, run the development server:
+> **Une vitrine digitale premium pour une agence d'automatisation et de développement moderne.**
+> 
+> *Stack: Next.js 14, Tailwind CSS, TypeScript, Framer Motion.*
+
+## 📋 À Propos
+
+**IdsCraft** est le site vitrine d'une agence digitale "Fullstack Moderne". Le projet a été conçu avec une attention particulière portée au design (UI/UX), à la fluidité des animations et à la performance.
+L'objectif est de convertir les visiteurs en prospects qualifiés grâce à une présentation claire des services (Web, Mobile, IA, Auto) et un portfolio interactif.
+
+### ✨ Fonctionnalités Clés
+
+- 🎨 **Design Premium & "Warm"** : Interface épurée, gradients subtils, glassmorphism.
+- 🌗 **Dark Mode Support** : Thème sombre élégant intégré nativement.
+- 📱 **100% Responsive** : Mobile-first, menu burger animé.
+- ⚡ **Animations** : Transitions de pages et micro-interactions fluides (Framer Motion).
+- 🧩 **Architecture Modulaire** : Basé sur des composants réutilisables (Shadcn/ui).
+- 🔍 **SEO Ready** : Structure sémantique et métadonnées optimisées.
+
+---
+
+## 🛠️ Stack Technique
+
+Ce projet utilise les dernières technologies du web moderne :
+
+- **Framework** : [Next.js 14](https://nextjs.org/) (App Router)
+- **Langage** : [TypeScript](https://www.typescriptlang.org/)
+- **Style** : [Tailwind CSS](https://tailwindcss.com/)
+- **Composants UI** : [Shadcn/ui](https://ui.shadcn.com/) (Radix Primitives)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/)
+- **Icônes** : [Lucide React](https://lucide.dev/)
+- **Gestion de Thème** : `next-themes`
+
+---
+
+## 🚀 Installation & Démarrage
+
+### Pré-requis
+
+- Node.js 18+
+- npm ou bun
+
+### 1. Cloner le projet
+
+```bash
+git clone https://github.com/votre-username/idscraft.git
+cd idscraft
+```
+
+### 2. Installer les dépendances
+
+```bash
+npm install
+# ou
+bun install
+```
+
+### 3. Lancer le serveur de développement
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Structure du Projet
 
-## Learn More
+```bash
+idscraft/
+├── app/                  # Pages et Layouts (Next.js App Router)
+│   ├── a-propos/         # Page À Propos
+│   ├── book/             # Page de Réservation
+│   ├── portfolio/        # Page Portfolio
+│   ├── services/         # Page Services
+│   ├── globals.css       # Styles globaux & Variables CSS
+│   ├── layout.tsx        # Layout Racine (Font, Providers)
+│   └── page.tsx          # Page d'accueil
+├── components/           # Composants React
+│   ├── home/             # Composants spécifiques à la Home (Hero, Trust...)
+│   ├── layout/           # Navbar, Footer
+│   ├── ui/               # Composants de base (Button, Card, Badge...)
+│   └── theme-toggle.tsx  # Bouton switch Dark/Light
+├── lib/                  # Utilitaires (cn, fetching...)
+├── public/               # Assets statiques (Images, SVG)
+└── ...config files       # Tailwind, TSConfig, Next Config
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Personnalisation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Couleurs
+Les couleurs sont définies via des variables CSS dans `app/globals.css`.
+Le thème principal utilise une teinte **Deep Blue** (`sky-500` variant).
 
-## Deploy on Vercel
+### Logo
+Le logo utilise un composant dédié `components/ui/logo.tsx` pour une performance optimale et éviter les soucis de loader SVG.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! Pour des changements majeurs, veuillez ouvrir une issue d'abord pour discuter de ce que vous aimeriez changer.
+
+1. Fork le projet
+2. Créer une branche (`git checkout -b feature/AmazingFeature`)
+3. Commit les changements (`git commit -m 'Add some AmazingFeature'`)
+4. Push sur la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrir une Pull Request
+
+---
+
+## 📄 Licence
+
+Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
