@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Agence Digitale - Automatisation & Développement",
+  title: "IdsCraft Agency - Automatisation & Développement",
   description: "Transformez vos processus manuels en automatisations puissantes. Agence spécialisée en Next.js, Zapier, Make et IA.",
 };
 
