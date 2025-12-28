@@ -83,7 +83,7 @@ export default function BookPage() {
                                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 text-primary">
                                         <CheckCircle2 className="h-8 w-8" />
                                     </div>
-                                    <h3 className="text-2xl font-bold mb-2">Message envoyé !</h3>
+                                    <h3 className="text-2xl font-bold mb-2">Message envoyé !!</h3>
                                     <p className="text-muted-foreground mb-6">
                                         Merci de nous avoir contactés. Notre équipe va analyser votre demande et reviendra vers vous sous 24h.
                                     </p>
