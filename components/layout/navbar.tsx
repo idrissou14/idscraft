@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils"
 import { Logo } from "@/components/ui/logo"
 
 const navItems = [
+    { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "À propos", href: "/a-propos" },
